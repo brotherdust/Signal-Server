@@ -7,6 +7,9 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+add_definitions(--fuse-ld=lld)
+add_definitions(--rtlib=compiler-rt)
+
 # Optimization
 set(CMAKE_CXX_FLAGS "-O2")
 
